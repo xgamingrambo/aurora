@@ -11,5 +11,8 @@ openai
 pinecone
 dotenv
 edge-tts
+pandas
 PyPDF2  # For PDF loading (via langchain_community)
 unstructured[local-inference]  # For Excel loading
+numpy
+scipy
