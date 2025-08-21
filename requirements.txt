@@ -6,15 +6,10 @@ langchain-pinecone
 langchain-community
 langchain-core
 langchain-text-splitters
-langchain-schema
 pinecone-client
 openai
 pinecone
 dotenv
 edge-tts
-pandas
 PyPDF2  # For PDF loading (via langchain_community)
 unstructured[local-inference]  # For Excel loading
-torch  # For any ML-related extensions
-numpy
-scipy
