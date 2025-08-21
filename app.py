@@ -121,7 +121,7 @@ def reset_conversation():
     ]
 
 def rag_qa_chain(question, retriever, chat_history):
-    llm = ChatOpenAI(model="gpt-5")  ## You can change the model name
+    llm = ChatOpenAI(model="gpt-4o", temperature=0.5)  ## You can change the model name
  
     output_parser = StrOutputParser()
 
@@ -150,6 +150,7 @@ def rag_qa_chain(question, retriever, chat_history):
     - If the information is not in the context, politely say: "I'm sorry, I don't have that information in your records. Please upload relevant documents or consult your doctor."
     - If the question is irrelevant to health or medical records, steer back: "I'm here to help with your health records. Could you ask about your lab results or medical history?"
     - Respond in English only.
+    - DOn't try to give answer by your self, You have to make sure all the answers are comming from the vector database. Don't use your own knowledge base.
 
     Retrieved Documents (Context):
     ------------
@@ -267,4 +268,5 @@ if text or query:
     # Generate voice response if enabled
     if "voice_response" in st.session_state and st.session_state.voice_response:
         response_voice = st.session_state.voice_response
+
         generate_voice(response, voices[response_voice])
