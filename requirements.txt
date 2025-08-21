@@ -6,7 +6,6 @@ langchain-pinecone
 langchain-community
 langchain-core
 langchain-text-splitters
-pinecone-client
 openai
 pinecone
 dotenv
@@ -16,3 +15,4 @@ PyPDF2  # For PDF loading (via langchain_community)
 unstructured[local-inference]  # For Excel loading
 numpy
 scipy
+
