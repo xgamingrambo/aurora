@@ -1,13 +1,13 @@
 streamlit
 streamlit-mic-recorder
-langchain
+langchain>=0.2.14
 langchain-openai
-langchain-pinecone
+langchain-pinecone>=0.1.1
 langchain-community
 langchain-core
 langchain-text-splitters
 openai
-pinecone
+pinecone>=5.0.0
 dotenv
 edge-tts
 pandas
@@ -15,4 +15,5 @@ PyPDF2  # For PDF loading (via langchain_community)
 unstructured[local-inference]  # For Excel loading
 numpy
 scipy
+
 
